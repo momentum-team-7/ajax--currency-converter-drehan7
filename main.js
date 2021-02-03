@@ -77,4 +77,20 @@ function changeCurrencyLabels() {
 
     baseLabel.textContent = baseCurrency
     targetLabel.textContent = targetCurrency;
+    clearResultAndInput()
+
+
+}
+
+function clearResultAndInput() {
+    let r = document.querySelector(".result-currency")
+    let i = document.querySelector("input")
+
+    if (i.value !== "") {
+        i.value = ""
+    }
+
+    if (r.textContent !== "") {
+        r.textContent = ""
+    }
 }
