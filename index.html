@@ -5,9 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currency Converter</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" async></script>
+  <script src="script.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
 <body>
+
+  <header>
+    <h1>Currency Converter</h1>
+  </header>
+
+  <div class="main-container">
+
+        <div class="drop-downs">
+          Convert from <select id="base-currency-dropdown" name="base-currency"></select> to <select id="target-currency-dropdown" name="target-currency"></select
+        </div>
+
+        <div class="currency-amount">
+
+          <div class="base-input-container">
+
+            <input name="amount" type="number">
+            <label id="currency-label" for="amount"></label> =
+
+          </div>
+
+          <div class="result-container">
+            <div class="result-currency"></div>
+            <div class="target-currency"></div>
+          </div>
+
+          <div class="convert-button">
+            <button>Convert!</button>
+          </div>
+    
+        </div>
+
+  </div>
 
 </body>
 </html>
